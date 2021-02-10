@@ -71,6 +71,14 @@ namespace BasicServerHTTPlistener
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
 
+                Console.WriteLine("---------------------------");
+
+                Headers headers = new Headers(request);
+                headers.PrintHeaders();
+
+                Console.WriteLine("---------------------------");
+
+
                 // Construct a response.
                 string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
