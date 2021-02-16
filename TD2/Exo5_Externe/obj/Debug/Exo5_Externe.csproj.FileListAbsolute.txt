@@ -1,0 +1,6 @@
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\bin\Debug\Exo5_Externe.exe.config
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\bin\Debug\Exo5_Externe.exe
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\bin\Debug\Exo5_Externe.pdb
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\obj\Debug\Exo5_Externe.csproj.CoreCompileInputs.cache
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\obj\Debug\Exo5_Externe.exe
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\obj\Debug\Exo5_Externe.pdb
