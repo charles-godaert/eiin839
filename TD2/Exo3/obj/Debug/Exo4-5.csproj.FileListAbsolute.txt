@@ -1,5 +1,0 @@
-C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo3\obj\Debug\Exo3.Properties.Resources.resources
-C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo3\obj\Debug\Exo4-5.csproj.GenerateResource.cache
-C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo3\obj\Debug\Exo4-5.csproj.CoreCompileInputs.cache
-C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo3\obj\Debug\Exo3.exe
-C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo3\obj\Debug\Exo3.pdb

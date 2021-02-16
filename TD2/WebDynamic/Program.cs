@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Web;
 
-namespace Exo4and5
+namespace WebDynamic
 {
     internal class Program
     {
@@ -105,7 +105,7 @@ namespace Exo4and5
                 Console.WriteLine("\tparam1 = " + param1);
                 Console.WriteLine("\tparam2 = " + param2);
 
-               
+
                 Console.WriteLine($"documentContents : {documentContents}");
 
                 // Obtain a response object.
@@ -113,7 +113,8 @@ namespace Exo4and5
 
                 String content = "Nothing to show";
 
-                if (request.Url.Segments[request.Url.Segments.Length-1].Contains("method1")) {
+                if (request.Url.Segments[request.Url.Segments.Length - 1].Contains("method1"))
+                {
                     content = method1(param1, param2);
                 }
                 if (request.Url.Segments[request.Url.Segments.Length - 1].Contains("Exo5_Externe"))

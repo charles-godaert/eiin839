@@ -1,0 +1,7 @@
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\bin\Debug\WebDynamic.exe.config
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\bin\Debug\WebDynamic.exe
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\bin\Debug\WebDynamic.pdb
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\obj\Debug\WebDynamic.csprojAssemblyReference.cache
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\obj\Debug\WebDynamic.csproj.CoreCompileInputs.cache
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\obj\Debug\WebDynamic.exe
+C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\WebDynamic\obj\Debug\WebDynamic.pdb
