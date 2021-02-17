@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Web;
 
@@ -113,13 +114,20 @@ namespace WebDynamic
 
                 String content = "Nothing to show";
 
-                if (request.Url.Segments[request.Url.Segments.Length - 1].Contains("method1"))
-                {
-                    content = method1(param1, param2);
+                String lastUrlSegment = request.Url.Segments[request.Url.Segments.Length - 1];
+                Console.WriteLine($"-----{lastUrlSegment}----");
+
+                try
+                {  
+                    Type type = typeof(Mymethods);
+                    MethodInfo method = type.GetMethod(lastUrlSegment);
+                    Mymethods mymethods = new Mymethods();
+                    string[] parameters = new string[] { param1, param2 };
+                    content = (string)method.Invoke(mymethods, parameters);
                 }
-                if (request.Url.Segments[request.Url.Segments.Length - 1].Contains("Exo5_Externe"))
+                catch(Exception ex)
                 {
-                    content = Exo5_Externe(param1, param2);
+                    Console.WriteLine($"Error : {lastUrlSegment} : {ex.Message}");
                 }
                 returnHTML(response, content);
             }
@@ -127,30 +135,33 @@ namespace WebDynamic
             // listener.Stop();
         }
 
-        static String method1(String param1, String param2)
+        public class Mymethods
         {
-            return $"<HTML><BODY> Hello {param1} and {param2}</BODY></HTML>";
-        }
-
-        static String Exo5_Externe(String param1, String param2)
-        {
-            ProcessStartInfo start = new ProcessStartInfo();
-            start.FileName = @"C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\bin\Debug\Exo5_Externe.exe";
-            start.Arguments = $"{param1} {param2}";
-            start.UseShellExecute = false;
-            start.RedirectStandardOutput = true;
-            //
-            // Start the process.
-            //
-            StringBuilder builder = new StringBuilder();
-            using (Process process = Process.Start(start))
+            public String method1(String param1, String param2)
             {
-                using (StreamReader reader = process.StandardOutput)
-                {
-                    builder.Append(reader.ReadToEnd());
-                }
+                return $"<HTML><BODY> Hello {param1} and {param2}</BODY></HTML>";
             }
-            return builder.ToString();
+        
+            public String Exo5_Externe(String param1, String param2)
+            {
+                ProcessStartInfo start = new ProcessStartInfo();
+                start.FileName = @"C:\Users\Charles\Documents\Drive\Polytech\SI4\S8\Serv.Oriented Computing - WS\TD\eiin839\TD2\Exo5_Externe\bin\Debug\Exo5_Externe.exe";
+                start.Arguments = $"{param1} {param2}";
+                start.UseShellExecute = false;
+                start.RedirectStandardOutput = true;
+                //
+                // Start the process.
+                //
+                StringBuilder builder = new StringBuilder();
+                using (Process process = Process.Start(start))
+                {
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        builder.Append(reader.ReadToEnd());
+                    }
+                }
+                return builder.ToString();
+            }
         }
 
         static void returnHTML(HttpListenerResponse response, String content)
