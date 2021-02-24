@@ -14,21 +14,21 @@ namespace TD3_RestApi
         // HttpClient is intended to be instantiated once per application, rather than per-use. See Remarks.
         static readonly HttpClient client = new HttpClient();
 
-        private static Task<string> truc;
+        private static Task<string> res;
 
         public async static Task Main()
         {
             // Call asynchronous network methods in a try/catch block to handle exceptions.
             try
             {
-                truc = getAllContractsAsync();
+                res = getAllContractsAsync();
             }
             catch (HttpRequestException e)
             {
                 Console.WriteLine("\nException Caught!");
                 Console.WriteLine("Message :{0} ", e.Message);
             }
-            Console.WriteLine(truc.Result.ToString());
+            Console.WriteLine(res.Result.ToString());
             Console.ReadKey();
         }
 
