@@ -4,7 +4,7 @@ https://developer.jcdecaux.com/#/opendata/vls?page=dynamic
 
 1.
 
-https://api.jcdecaux.com/vls/v3/contracts?apiKey=2dae8548640ca7455930eb98ca0508a102ac8c1a
+GET https://api.jcdecaux.com/vls/v3/contracts?apiKey=2dae8548640ca7455930eb98ca0508a102ac8c1a
 
 
 [
