@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TD2",
-    "\\TD5"
+    "\\session5\\WebService_MultipleEndpoints_Different_Address",
+    "\\session5\\WebService_MultipleEndpoints_Different_Address\\WebService_MultipleEndpoints_Different_Address",
+    "\\TD4\\TD4",
+    "\\TD4\\TD4\\Properties",
+    "\\TD5",
+    "\\TD5\\MathsLibrary",
+    "\\TD5\\MathsLibrary\\MathsLibrary"
   ],
-  "SelectedNode": "\\TD5",
+  "SelectedNode": "\\TD5\\MathsLibrary\\MathsLibrary\\App.config",
   "PreviewInSolutionExplorer": false
 }
